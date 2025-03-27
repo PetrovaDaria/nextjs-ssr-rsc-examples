@@ -1,0 +1,1 @@
+export const title = "text-3xl font-bold mb-6";

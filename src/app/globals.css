@@ -25,3 +25,12 @@ body {
     text-wrap: balance;
   }
 }
+
+.block {
+  padding: 2rem;
+  border: 1px solid black;
+}
+
+.client {
+  background-color: rgba(245, 40, 145, 0.2);
+}
