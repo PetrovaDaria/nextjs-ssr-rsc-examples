@@ -9,7 +9,7 @@ export const WithProps = ({ fromServer }: TProps) => {
         <div className={'block client text-lg'}>
             <p>Это клиентский компонент</p>
             <p>
-                И он показывает проп, полученный от сервера "{fromServer}"
+                И он показывает проп, полученный от сервера &#34;{fromServer}&#34;
             </p>
         </div>
     );

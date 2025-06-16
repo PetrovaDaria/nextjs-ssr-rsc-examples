@@ -1,7 +1,6 @@
 'use client'
 
 import {useEffect, useState} from "react";
-import {title} from "@/app/styles";
 
 const code = `
 const [innerWidth, setInnerWidth] = useState(0);
