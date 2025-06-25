@@ -4,6 +4,6 @@ export default function Home() {
   return (
     <div className={'block'}>
         <p className={title}>home</p>
-    </div>
+       </div>
   );
 }

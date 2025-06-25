@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import { Suspense, lazy } from "react";
-import Link from "next/link";
+import Navigation from "./components/navigation";
 
 const RscDevtoolsPanel = lazy(() =>
     // @ts-expect-error ругается чего-то
@@ -37,22 +37,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-      <div style={{
-          display: 'flex',
-          justifyContent: 'space-between',
-          borderBottom: '1px solid black',
-          padding: '16px 24px'
-      }}>
-          <Link href={'/'}>Home</Link>
-          <Link href={'/with-props'}>Пропсы</Link>
-          <Link href={'/incorrect-props'}>Несериализуемые пропсы</Link>
-          <Link href={'/server-function'}>Server Function</Link>
-          <Link href={'/direct-window'}>window напрямую</Link>
-          <Link href={'/indirect-window'}>window через хуки</Link>
-          <Link href={'/date-now'}>Date.now()</Link>
-          <Link href={'/no-ssr'}>No SSR</Link>
-          <Link href={'/streaming'}>Стриминг</Link>
-      </div>
+      <Navigation />
         {children}
         <Suspense>
             <RscDevtoolsPanel />
